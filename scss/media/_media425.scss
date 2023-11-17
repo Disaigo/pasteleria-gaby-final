@@ -1,0 +1,44 @@
+@media(max-width:425px) {
+    header {
+        background: none;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    main{    
+    .navbar {
+        display: flex;
+        padding-right: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .banner{
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+    } 
+    .sectionTortas{
+        .sectionTortasimg{
+            .img{
+                height: 40rem;
+            }
+        }
+    }
+}
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .texto{
+        font-size: 1.625rem;
+        .parrafoTexto{
+            border-radius: 0%;
+        }
+    }
+}

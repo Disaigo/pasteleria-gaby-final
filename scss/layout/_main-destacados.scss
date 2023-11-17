@@ -1,0 +1,21 @@
+.mainDestacados {
+    background-image: $imagen-destacados;
+    background-attachment: fixed;
+}
+.bannerDestacados {
+    @include flex(column,none,center,center,none);
+    @include height-width(31.25rem,100%);
+    text-align: center;
+    padding: 1.25rem;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: white;
+    font-family: 'Oswald', sans-serif;
+
+    h1 {
+        font-size: map-get($font-size, h1);
+    }
+
+    h2 {
+        font-size: map-get($font-size, h2);
+    }
+}

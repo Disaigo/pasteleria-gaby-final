@@ -1,0 +1,11 @@
+header {
+    @include height-width(56.25rem,100%);
+    background: url(../assets/img/logolargo4.png) no-repeat;
+    background-size: 65% 56.25rem;
+    background-position: center left;
+    padding: 1rem;
+
+    .logoNosotros {
+        visibility: hidden;
+    }
+}

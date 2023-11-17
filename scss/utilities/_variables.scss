@@ -1,0 +1,29 @@
+$subtitles-weight:bold;
+$subtitles-color:lightblue;
+$subtitles-size:3rem;
+$color-fondo:#dbbe87;
+$color-boton:rgb(110, 240, 188);
+$imagen-destacados:url(https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+@mixin flex-colum-center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: center;
+}
+
+@mixin subtitles {
+    color:$subtitles-color;
+    font-size: $subtitles-size;
+    font-weight: $subtitles-weight;
+    padding-top: $subtitles-paddingtop;
+}

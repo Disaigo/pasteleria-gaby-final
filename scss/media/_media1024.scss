@@ -1,0 +1,18 @@
+@media(max-width:1024px) {
+    header {
+        background: none;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .logoNosotros {
+            display: flex;
+            justify-content: end;
+            visibility: visible;
+            height: 13rem;
+            width: 13rem;
+        }
+    }
+}

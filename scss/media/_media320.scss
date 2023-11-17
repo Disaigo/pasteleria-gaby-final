@@ -1,0 +1,21 @@
+@media(max-width:320px) {
+    main {
+        .banner {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+
+        .sectionTortas {
+            .sectionTortasimg {
+                .img {
+                    height: 30rem;
+                }
+
+                .textoMain {
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}

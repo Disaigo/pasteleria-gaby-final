@@ -1,0 +1,33 @@
+.mainNosotros {
+    background-image: url(../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto {
+    font-size: 2.5rem;
+    padding: 5rem 0 5rem 0;
+    @include height-width(100%,none);
+    @include flex(row,wrap,center,center,20rem);
+    font-family: 'Oswald', sans-serif;
+
+    .parrafoTexto {
+        height: auto;
+        width: 65rem;
+        background-color: rgb(255, 255, 255);
+        padding: 2rem;
+        border-radius: 5%;
+
+        h2 {
+            font-size: 4rem;
+        }
+    }
+
+    .parrafoImg {
+        @include height-width(40rem,35rem);
+        .imgNos {
+            @include height-width(100%,100%);
+            border-radius: 5%;
+        }
+    }
+}

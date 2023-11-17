@@ -1,0 +1,7 @@
+.ubicacion {
+    @include flex(none,none,center,none,none);
+    padding: 2rem;
+    iframe{
+        @include height-width(40rem,40rem);
+    }
+}

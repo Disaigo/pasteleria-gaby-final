@@ -1,0 +1,940 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    height: 100%;
+    max-width: 100%;
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: 56.25rem;
+    background: url(../assets/img/logolargo4.png) no-repeat;
+    background-size: 65% 56.25rem;
+    background-position: center left;
+    padding: 1rem;
+    .logoNosotros{
+        visibility: hidden;
+    }
+}
+
+.navbar {
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+
+
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 2rem;
+        }
+    }
+}
+
+main {
+    background-color: $color-fondo;
+
+    .banner {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 31.25rem;
+        text-align: center;
+        padding: 1.25rem;
+        font-family: 'Oswald', sans-serif;
+        h1{
+
+            font-size: 8rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+    }
+
+    .sectionTortas {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 3rem;
+
+        .sectionTortasimg {
+            width: 50rem;
+            height: auto;
+            margin-bottom: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.875rem;
+            text-align: center;
+            .img {
+                width: 80%;
+                height: 50rem;
+                box-shadow: 5px 8px 12px black;
+                transition: linear 0.5s;
+                border-radius: 5%;
+            &:hover{
+                filter: blur(1px);
+
+            }
+            }
+            .textoMain{
+                width: 80%;
+                height: auto;
+                padding: 3rem;
+                font-family: 'Oswald', sans-serif;
+                font-size: 2.5rem;
+            }
+            p {
+                width: 80%;
+                height: auto;
+                padding-top: 3rem;
+                padding-bottom: .9375rem;
+                font-family: 'Agbalumo', sans-serif;
+                font-size: 4.5rem;
+            }
+
+            .botonIndex {
+
+                padding: .625rem;
+                border-radius: 9%;
+                background-color: $color-boton;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    .sectionIcons {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 3.75rem;
+        .sectionIconsimg {
+            width: 50rem;
+            height: auto;
+            margin-bottom: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.875rem;
+            text-align: center;
+            .img {
+                width: 70%;
+                height: 30rem;
+                box-shadow: 5px 8px 12px black;
+                transition: linear 0.5s;
+                border-radius: 20%;
+                background-color: white;
+            }
+            .textoMain{
+                width: 80%;
+                height: auto;
+                padding: 3rem;
+                font-family: 'Oswald', sans-serif;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+footer {
+    width: 100%;
+    background-color: $color-fondo;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo {
+            width: 5rem;
+            height: 5rem;
+
+        }
+
+        .imgLogo {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding: .625rem;
+        }
+    }
+
+}
+productos 
+.botonProducto{
+    font-size: 1.875rem;
+    padding: .625rem;
+    border-radius: 9%;
+    background-color: $color-boton;
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Playpen Sans', cursive;
+        }
+
+}
+productos destacados
+.mainDestacados{
+    background-image: $imagen-destacados;
+}
+sobre nosotros 
+
+.mainNosotros{
+    background-image: url(../assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.texto {
+    font-size: 2.5rem;
+    padding: 5rem 0 5rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20rem;
+    justify-content: center;
+    align-items: center;
+        .parrafoTexto{
+            height: auto;
+            width: 65rem;
+            background-color: rgb(255, 255, 255);
+            padding: 2rem;
+            border-radius: 5%;
+            h2{
+                font-size: 4rem;
+            }
+        }
+        .parrafoImg{
+            height: 40rem;
+            width: 35rem;
+            .imgNos{
+                height: 100%;
+                width: 100%;
+            }
+        }
+}
+contactos 
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+
+}
+
+#box-form {
+    @include flex-colum-center;
+    height:100%;
+
+        form {
+        @include flex-colum-center;
+        border-radius: 2rem;
+        font-family: 'Oswald', sans-serif;
+        .caja-form h2 {
+            font-weight: $subtitles-weight;
+            font-size: $subtitles-size;
+
+        } 
+
+        .caja-form-name {
+            font-size: 2rem;
+            @include flex-row-center;
+
+
+
+            .caja-form {      
+                @include flex-colum-center;   
+                line-height: 2rem;
+
+
+
+                .datos {
+                    max-width: 22rem;
+                    margin-top: 0.5rem;
+                    height: 2.7rem;
+                    border-radius: 2rem;
+                    text-align: center;
+
+                }
+
+                .asunto {
+                    max-width: 22rem;
+                    height: 5rem;
+                    margin-top: 0.5rem;
+                    border-radius: 2rem;
+                    padding: 1rem;
+                    text-align: center;
+
+                }
+
+                .caja-msg {
+                    max-width: 22rem;
+                    height: 9rem;
+                    margin-top: 0.5rem;
+                    border-radius: 2rem;
+                    padding: 1rem;
+                    resize: none;
+                }
+                .button-form {
+                    @include flex-row-center;
+
+                }
+            }
+        }    
+    }    
+}
+
+
+error 404
+.divError{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+    text-align: center;
+    font-size: 2.5rem;
+    h2{
+        font-size: 3.75rem;
+    }
+    p{
+        height: 100%;
+    }
+}
+@media(max-width:1440px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1024px) {
+    header {
+        background: none;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .logoNosotros{
+            display: flex;
+            justify-content: end;
+            visibility: visible;
+            height: 13rem;
+            width: 13rem;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    header {
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    main{
+        .banner{
+            h1{
+                font-size: 6rem;
+            }
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+    .navbar li a {
+        font-size: 1.25rem;
+    }
+
+    .sectionTortas {
+        height: 37.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.875rem;
+        padding: 1rem;
+
+    }
+}
+
+@media(max-width:425px) {
+    header {
+        background: none;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    main{    
+    .navbar {
+        display: flex;
+        padding-right: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner{
+        h1{
+            font-size: 4rem;
+        }
+        h2{
+            font-size: 3rem;
+        }
+    } 
+    .sectionTortas{
+        .sectionTortasimg{
+            .img{
+                height: 40rem;
+            }
+        }
+    }
+}
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(max-width:320px) {
+    main{
+        .banner{
+            h1{
+                font-size: 4rem;
+            }
+        }
+        .sectionTortas{
+            .sectionTortasimg{
+                .img{
+                    height: 30rem;
+                }
+                .textoMain{
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+}
+/*1:variable mixins mapas = utilities*/
+/*carpeta base*/
+/*carpeta layout*/
+/*hacer extends en clases que se repitan*/
+/*incluir mixins (@include flex)*/
+/*incluir maps (map-get($size, xl);*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  height: 100%;
+  max-width: 100%;
+  font-size: 62.5%;
+}
+
+header {
+  height: 56.25rem;
+  width: 100%;
+  background: url(../assets/img/logolargo4.png) no-repeat;
+  background-size: 65% 56.25rem;
+  background-position: center left;
+  padding: 1rem;
+}
+header .logoNosotros {
+  visibility: hidden;
+}
+
+.navbar {
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+}
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+main {
+  background-color: #dbbe87;
+}
+main .banner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  height: 31.25rem;
+  width: 100%;
+  text-align: center;
+  padding: 1.25rem;
+  font-family: "Oswald", sans-serif;
+}
+main .banner h1 {
+  font-size: 8rem;
+}
+main .banner h2 {
+  font-size: 3rem;
+}
+
+.botonProducto {
+  font-size: 1.875rem;
+  padding: 0.625rem;
+  border-radius: 9%;
+  background-color: rgb(110, 240, 188);
+}
+.botonProducto a {
+  text-decoration: none;
+  color: black;
+  font-family: "Playpen Sans", cursive;
+}
+
+.mainDestacados {
+  background-image: url(https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-attachment: fixed;
+}
+
+.bannerDestacados {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+  height: 31.25rem;
+  width: 100%;
+  text-align: center;
+  padding: 1.25rem;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: white;
+  font-family: "Oswald", sans-serif;
+}
+.bannerDestacados h1 {
+  font-size: 8rem;
+}
+.bannerDestacados h2 {
+  font-size: 3rem;
+}
+
+.mainNosotros {
+  background-image: url(../assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.texto {
+  font-size: 2.5rem;
+  padding: 5rem 0 5rem 0;
+  height: 100%;
+  width: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  font-family: "Oswald", sans-serif;
+}
+.texto .parrafoTexto {
+  height: auto;
+  width: 65rem;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 5%;
+}
+.texto .parrafoTexto h2 {
+  font-size: 4rem;
+}
+.texto .parrafoImg {
+  height: 40rem;
+  width: 35rem;
+}
+.texto .parrafoImg .imgNos {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  padding: 2rem;
+}
+.ubicacion iframe {
+  height: 40rem;
+  width: 40rem;
+}
+
+.divError {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  padding: 1.875rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.divError h2 {
+  font-size: 3rem;
+}
+.divError p {
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #dbbe87;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  padding: 1rem;
+}
+footer div {
+  width: 100%;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: none;
+}
+footer div .logo {
+  height: 5rem;
+  width: 5rem;
+}
+footer div .imgLogo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 0.625rem;
+}
+
+#box-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+}
+#box-form form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  border-radius: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+#box-form form .caja-form h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+#box-form form .caja-form-name {
+  font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+#box-form form .caja-form-name .caja-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  line-height: 2rem;
+}
+#box-form form .caja-form-name .caja-form .datos {
+  max-width: 22rem;
+  margin-top: 0.5rem;
+  height: 4rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+#box-form form .caja-form-name .caja-form .asunto {
+  max-width: 22rem;
+  height: 5rem;
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+#box-form form .caja-form-name .caja-form .caja-msg {
+  max-width: 22rem;
+  height: 9rem;
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  resize: none;
+}
+#box-form form .caja-form-name .caja-form .button-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.sectionTortas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+.sectionTortas .sectionTortasimg {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  width: 50rem;
+  height: auto;
+  margin-bottom: 4rem;
+  font-size: 1.875rem;
+  text-align: center;
+}
+.sectionTortas .sectionTortasimg .img {
+  width: 80%;
+  height: 50rem;
+  box-shadow: 5px 8px 12px black;
+  transition: linear 0.5s;
+  border-radius: 5%;
+}
+.sectionTortas .sectionTortasimg .img:hover {
+  filter: blur(1px);
+}
+.sectionTortas .sectionTortasimg .textoMain {
+  width: 80%;
+  height: auto;
+  padding: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+}
+.sectionTortas .sectionTortasimg p {
+  width: 80%;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 0.9375rem;
+  font-family: "Agbalumo", sans-serif;
+  font-size: 4.5rem;
+}
+.sectionTortas .sectionTortasimg .botonIndex {
+  padding: 0.625rem;
+  border-radius: 9%;
+  background-color: rgb(110, 240, 188);
+}
+.sectionTortas .sectionTortasimg .botonIndex a {
+  text-decoration: none;
+  color: black;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem;
+}
+
+.pDestacados {
+  width: 80%;
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 0.9375rem;
+  font-family: "Agbalumo", sans-serif;
+  font-size: 4.5rem;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: white;
+}
+
+.sectionIcons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  padding: 1rem;
+  gap: 3.75rem;
+}
+.sectionIcons .sectionIconsimg {
+  width: 50rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: none;
+  margin-bottom: 4rem;
+  font-size: 1.875rem;
+  text-align: center;
+}
+.sectionIcons .sectionIconsimg .img {
+  width: 70%;
+  height: 30rem;
+  box-shadow: 5px 8px 12px black;
+  transition: linear 0.5s;
+  border-radius: 20%;
+  background-color: white;
+}
+.sectionIcons .sectionIconsimg .textoMain {
+  width: 80%;
+  height: auto;
+  padding: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+}
+
+@media (max-width: 1440px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    background: none;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logoNosotros {
+    display: flex;
+    justify-content: end;
+    visibility: visible;
+    height: 13rem;
+    width: 13rem;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  main .banner h1 {
+    font-size: 6rem;
+  }
+  main .banner h2 {
+    font-size: 2rem;
+  }
+  .navbar li a {
+    font-size: 1.25rem;
+  }
+  .sectionTortas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.875rem;
+    padding: 1rem;
+  }
+  .sectionTortas .sectionTortasimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    background: none;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .navbar {
+    display: flex;
+    padding-right: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .banner h1 {
+    font-size: 4rem;
+  }
+  main .banner h2 {
+    font-size: 3rem;
+  }
+  main .sectionTortas .sectionTortasimg .img {
+    height: 40rem;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .texto {
+    font-size: 1.625rem;
+  }
+  .texto .parrafoTexto {
+    border-radius: 0%;
+  }
+}
+@media (max-width: 320px) {
+  main .banner h1 {
+    font-size: 4rem;
+  }
+  main .sectionTortas .sectionTortasimg .img {
+    height: 30rem;
+  }
+  main .sectionTortas .sectionTortasimg .textoMain {
+    font-size: 2.3rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
